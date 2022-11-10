@@ -1145,7 +1145,7 @@ html[data-theme="dark"] .promo-card__img-bg {
     height: 30px;
     margin: 0 auto;
     background-image: radial-gradient(circle, transparent 72%, #fff 72%),
-    repeating-linear-gradient(90deg, #fff 0, #fff 2%, #666 2%, #666 4%),
+    repeating-linear-gradient(90deg, #fff 0, #fff 2%, #69086d 2%, #69086d 4%),
     linear-gradient(#fff, #fff),
     radial-gradient(circle, transparent 72%, #fff 72%);
     background-size: 30px 30px, calc(100% - 30px) 2px, calc(100% - 30px) 100%, 30px 30px;
