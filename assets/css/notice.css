@@ -1,0 +1,99 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color-notice-bg: #b1124d;
+    --color-notice-border: #95053b;
+    --color-notice-text: #fff;
+}
+
+/* html[data-theme="dark"]{
+    --color-notice-bg: #ffffff7a;
+    --color-notice-border: #fff;
+    --color-notice-text: #000;
+} */
+
+/**
+* =====================================================
+* Notice Modal
+* =====================================================
+*/
+
+.notice-wrapper {
+    max-width: 350px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.notice {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 10px;
+    border: 1px solid;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    border-radius: .3rem;
+    background-color: var(--color-notice-bg);
+    color: var(--color-notice-text);
+    backdrop-filter: blur(30px) saturate(100%) contrast(45%) brightness(130%);
+    -webkit-backdrop-filter: blur(30px) saturate(100%) contrast(45%) brightness(130%);
+}
+
+.notice span {
+    padding: 2rem;
+}
+
+.notice,
+.notice button {
+    border-color: var(--color-notice-border);
+}
+
+.notice button:hover {
+    color: #840031;
+}
+
+.success,
+.success button {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.error,
+.error button {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.warning,
+.warning button {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.status-code {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.close-notice-btn {
+    color: var(--color-notice-text);
+    padding: 0px 15px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid;
+    cursor: pointer;
+}
